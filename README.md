@@ -33,7 +33,7 @@ from requests import get
 from zetanize import zetanize
 
 html = get('https://google.com').text
-forms = zetanize(html)
+forms = zetanize.zetanize(html)
 ```
 
 Here's the output:
