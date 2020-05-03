@@ -23,7 +23,7 @@ It's very easy to make HTTP requests in python, thanks to urllib and requests. H
 ### Documentation
 ```python
 from zetanize import zetanize
-forms = zetanize(html)
+forms = zetanize.zetanize(html)
 ```
 
 Well that's it! Just feed zetanize a HTML document and it will give you a dict of actionable form data.<br>
@@ -33,7 +33,7 @@ from requests import get
 from zetanize import zetanize
 
 html = get('https://google.com').text
-forms = zetanize(html)
+forms = zetanize.zetanize(html)
 ```
 
 Here's the output:
